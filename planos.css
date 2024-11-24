@@ -1,0 +1,115 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fdf7e1;
+   
+}
+
+h1 {
+    text-align: center;
+}
+
+h1 .underline {
+    margin-top: 1em;
+    display: inline-block; 
+    border-bottom: 2px solid blue; 
+    text-align: center;
+}
+
+/* Container dos Cards */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-top: 20px;
+}
+
+h5 {
+    margin: 2em 2em 2em ;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  
+    margin-top: 20px; 
+    font-size: 1.5rem; /* Tamanho do texto */
+    color: #333; /* Cor do texto */
+    
+}
+
+/* Texto dos cards */
+.card-text {
+    color: #555;
+    font-size: 1rem;
+    margin: 2em;
+}
+
+/* Estilo da lista de funcionalidades */
+.card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin: 2em;
+
+}
+
+.card ul li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+.card ul li::before {
+    content: '✔';
+    margin-right: 10px;
+    color: #28a745; /* verde para marcar os itens */
+}
+
+/* Botão */
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo de card para o Plano Premium */
+.card.premium {
+    border-left: 4px solid #ff9800; /* Borda laranja para indicar Premium */
+    background-color: #fdf7e1; /* Fundo claro para Premium */
+}
+
+.card.premium .card-title {
+    color: #ff9800;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .col-md-6 {
+        max-width: 100%;
+    }
+    .container {
+        padding: 20px;
+    }
+}
+
+

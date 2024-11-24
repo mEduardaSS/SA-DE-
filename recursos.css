@@ -1,0 +1,150 @@
+h1 .underline {
+    display: inline-block; 
+    border-bottom: 2px solid blue; 
+    margin-left: 0.5em;
+}
+
+p {
+    text-align: justify;
+    margin-top: 1em;
+    font-size: 20px;
+    margin-left: 1em;
+}
+
+.main {
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;  
+    margin-top: 4em;
+}
+
+
+.conteudo-text {
+    margin-top: 5em;
+}
+
+
+.img-container {
+    margin-top: 3em;
+    display: flex;
+    align-items: center;  
+}
+
+
+.img-container img {
+    width: 75%;  
+    height: auto;
+    margin-left: 15em;
+}
+
+
+/* Centraliza o conteúdo e título */
+.conteudo-funcionalidades {
+    display: flex;             /* Ativa o flexbox */
+    flex-direction: column;    /* Organiza os itens na vertical */
+    justify-content: center;   /* Centraliza o conteúdo verticalmente */
+    align-items: center;       /* Centraliza o conteúdo horizontalmente */  
+    margin-left: 6em;    
+}
+
+/* Centraliza o título */
+.funcionalidades-text {
+    text-align: center;
+    color: blue;
+    font-style: italic;
+    margin-top: 2em;     
+}
+
+/* Ajustes para garantir que os cards fiquem empilhados */
+.card-content {
+    display: flex;
+    flex-direction: column;    /* Organiza os cards um abaixo do outro */
+    align-items: center;       /* Centraliza os cards na horizontal */
+    gap: 10px;                 /* Espaço entre os cards */
+              /* Ajusta a largura para ocupar 100% do espaço disponível */
+    margin-top: 4em;   
+}
+
+/* Ajustes para os cards */
+.card {
+    width: 50rem;  /* Define a largura do card */
+    margin-bottom: 1.5em; /* Espaço entre os cards */
+    background-color: blue;
+    color: white;
+ 
+}
+
+i {
+    float: left;
+    font-size: 20px;
+}
+
+span {
+    
+    font-weight: bold;
+    margin-left: -1em;
+}
+
+.beneficios {
+    padding: 3em 0;
+    display: flex;
+    flex-direction: column;      /* Coloca os itens em uma coluna */
+    align-items: center;         /* Centraliza todos os itens horizontalmente */
+    justify-content: center;     /* Centraliza os itens verticalmente */
+    text-align: center;          /* Garante que o texto dentro da seção fique centralizado */
+}
+
+.beneficio {
+    display: flex;              /* Flexbox para alinhar o número e o texto lado a lado */
+    align-items: center;        /* Alinha verticalmente o número e o título */
+    margin-bottom: 2em;         /* Espaço entre os benefícios */
+    width: 100%;                /* Garante que os itens ocupem toda a largura */
+    max-width: 600px;           /* Limita a largura máxima para não esticar demais */
+}
+
+.beneficio-numero {
+    font-size: 3.5rem;          /* Tamanho do número */
+    font-weight: bold;          /* Deixar o número em negrito */
+    color: #2C2FA6;             /* Cor do número */
+    width: 3rem;                /* Largura fixa para o número */
+    height: 3rem;               /* Altura fixa para o número */
+    border-radius: 50%;         /* Faz o número ficar redondo */
+    background-color: #fff;     /* Cor de fundo do número */
+    display: flex;              /* Centraliza o número dentro do círculo */
+    justify-content: center;    /* Alinha o número horizontalmente */
+    align-items: center;        /* Alinha o número verticalmente */
+    margin-right: 1.5em;         /* Espaço entre o número e o título */
+}
+
+.beneficio-texto {
+    display: flex;              /* Flexbox para organizar o título e descrição */
+    flex-direction: column;     /* Organiza o título e a descrição em uma coluna */
+}
+
+.beneficio-titulo {
+    font-size: 1.5rem;          /* Tamanho do título do benefício */
+    font-weight: bold;          /* Título em negrito */
+    color: #333;                /* Cor do título */
+    margin-bottom: 0.5em;       /* Espaço abaixo do título */
+    text-align: left;
+    margin-top: 20px;
+}
+
+.beneficio-descricao {
+    font-size: 1rem;            /* Tamanho da descrição */
+    color: #666;                /* Cor da descrição */
+    line-height: 1.6;           /* Espaçamento entre as linhas */
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;         /* Centraliza o título da seção */
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
