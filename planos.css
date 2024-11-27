@@ -1,6 +1,6 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #fdf7e1;
+    background-color: #f7f5f5;
    
 }
 
@@ -11,7 +11,7 @@ h1 {
 h1 .underline {
     margin-top: 1em;
     display: inline-block; 
-    border-bottom: 2px solid blue; 
+    border-bottom: 2px solid #2A3399; 
     text-align: center;
 }
 
@@ -19,13 +19,20 @@ h1 .underline {
 .container {
     max-width: 1000px;
     margin: 0 auto;
+    
 }
 
 .card {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin: 5em;
+    background-color: white;
+}
+
+.card-body, .card-text, .card-title, .card-conteudo {
+    background-color: white;
 }
 
 h5 {
@@ -34,14 +41,14 @@ h5 {
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 9px 18px rgba(61, 16, 209, 0.37);
 }
 
 .card-title {
-  
-    margin-top: 20px; 
+    margin-top: 5px; 
     font-size: 1.5rem; /* Tamanho do texto */
     color: #333; /* Cor do texto */
+    margin-left: 1em;
     
 }
 
@@ -58,6 +65,7 @@ h5 {
     padding: 0;
     margin: 0;
     margin: 2em;
+    background-color: white;
 
 }
 
@@ -67,6 +75,7 @@ h5 {
     color: #666;
     display: flex;
     align-items: center;
+    background-color: white;
 }
 
 .card ul li::before {
@@ -75,27 +84,32 @@ h5 {
     color: #28a745; /* verde para marcar os itens */
 }
 
-/* Botão */
 .btn {
-    background-color: #007bff;
+    background-color: #2A3399;
     color: white;
     border: none;
     text-align: center;
     border-radius: 5px;
     font-size: 1rem;
     text-decoration: none;
-    display: inline-block;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 200px; 
+    height: 40px; 
     transition: background-color 0.3s ease;
+    margin-left: 2em;
 }
 
 .btn:hover {
     background-color: #0056b3;
 }
 
-/* Estilo de card para o Plano Premium */
+
+
 .card.premium {
-    border-left: 4px solid #ff9800; /* Borda laranja para indicar Premium */
-    background-color: #fdf7e1; /* Fundo claro para Premium */
+    border-left: 4px solid #ff9800; 
+    background-color: #fdf7e1; 
 }
 
 .card.premium .card-title {

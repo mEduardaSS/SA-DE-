@@ -3,8 +3,6 @@ body {
     padding: 0;
 }
 
-
-
 .conteudo-text {
     margin-top: 4em;
     align-items: center;
@@ -22,14 +20,15 @@ p {
     font-size: 20px
 }
 
-.btn-nosso-trabalho {
-    margin-top: 2em;
-    border-radius: 20em;
-    width: 250px;
+.btn {
+    border-radius: 30px;
+    background-color: #4655FF;
+    color: aliceblue;
+    width: 150px;
     height: 40px;
-    font-size: 20px;
-    font-weight: bolder;    
+    margin: 10px;
 }
+
 
 .img-container {
     display: flex;
