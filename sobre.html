@@ -8,6 +8,7 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./sobre.css">
     <link rel="stylesheet" href="./menu.css">
+    <script src="./index.js"></script>
    
 </head>
 <body>
@@ -72,88 +73,132 @@
             </div>
         </div>
 
-        <div class="equipe">
-            <h1 class="title-equipe text-center mb-4">Conheça nossa equipe</h1>
-        
-            <div class="container">
-                <div class="row">
-                  
-                    <div class="col-md-6">
-                        <div class="card-equipe mb-3">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="./img/FERNANDA.png" class="img-fluid " alt="Membro 1">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Fernanda Kedouk</h5>
-                                        <p class="card-text">Gestora de Projeto e Scrum Master</p>
-                                        <p class="card-text">
-                                            Responsável por gerenciar prazos, facilitar a comunicação entre os membros da equipe e garantir que as metas sejam alcançadas
-                                        </p>
-                                    </div>
-                                </div>
+        <div class="container">
+            <div class="row">
+                <!-- Coluna 1: 3 Cards -->
+                <div class="col-md-6">
+                    <!-- Card 1 -->
+                    <div class="card-equipe mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./img/FERNANDA.png" class="img-fluid" alt="Membro 1">
                             </div>
-                        </div>
-        
-                        <div class="card-equipe mb-3">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="./img/eu.png" class="img-fluid " alt="Membro 2">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Maria Eduarda Souza</h5>
-                                        <p class="card-text">Desenvolvedora de Sistemas de Informações e Algoritmos</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="card-equipe mb-3">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="./img/kerne.png" class="img-fluid" alt="Membro 3">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Nicole Kerne</h5>
-                                        <p class="card-text">Product Owner e Analista de Suporte e Manutenção</p>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fernanda Kedouk</h5>
+                                    
+                                    <button class="btn-equipe position-relative" style="margin-left: 4em;" onclick="toggleInfo('info-fernanda')">
+                                        <i id="arrow-fernanda" class="fas fa-chevron-down position-absolute" style="top: 10px; right: 10px;"></i> Mais informações
+                                    </button>
+                                    <div id="info-fernanda" class="more-info" style="display: none;">
+                                        <p>CARGO: Gestor de Projeto e Scrum Master. 
+                                        Responsável por gerenciar prazos, facilitar a comunicação entre os membros da equipe e garantir que as metas sejam alcançadas.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
         
-                    <!-- Coluna 2: 3 Cards -->
-                    <div class="col-md-6">
-                        <div class="card-equipe mb-3">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="./img/teixeira.png" class="img-fluid " alt="Membro 4">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Membro 4</h5>
-                                        <p class="card-text">Descrição do membro 4.</p>
+                    <!-- Card 2 -->
+                    <div class="card-equipe mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./img/eu.png" class="img-fluid" alt="Membro 2">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="margin-left: -2.5em;">Maria Souza</h5>
+                         
+                                    <button class="btn-equipe position-relative" style="margin-left: 4em;" onclick="toggleInfo('info-maria')">
+                                        <i id="arrow-maria" class="fas fa-chevron-down position-absolute" style="top: 10px; right: 10px;"></i> Mais informações
+                                    </button>
+                                    <div id="info-maria" class="more-info" style="display: none;">
+                                        <p>CARGO: Desenvolvedora de Sistemas de
+                                            Informações. Responsável por desenvolver sistemas de informação e algoritmos inovadores.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
         
-                        <div class="card-equipe mb-3">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="./img/villaruel.png" class="img-fluid" alt="Membro 5">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Membro 5</h5>
-                                        <p class="card-text">Descrição do membro 5.</p>
+                    <!-- Card 3 -->
+                    <div class="card-equipe mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./img/kerne.png" class="img-fluid" alt="Membro 3">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="margin-left: -2.5em;">Nicole Kerne</h5>
+                                   
+                                    <button class="btn-equipe position-relative" style="margin-left: 4em;" onclick="toggleInfo('info-nicole')">
+                                        <i id="arrow-nicole" class="fas fa-chevron-down position-absolute" style="top: 10px; right: 10px;"></i> Mais informações
+                                    </button>
+                                    <div id="info-nicole" class="more-info" style="display: none;">
+                                        <p>CARGO: Product Owner. Responsável por liderar o desenvolvimento do produto e garantir que o suporte e manutenção sejam eficazes.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+        
+                <!-- Coluna 2: 2 Cards -->
+                <div class="col-md-6">
+                    <!-- Card 4 -->
+                    <div class="card-equipe mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./img/teixeira.png" class="img-fluid" alt="Membro 4">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="margin-right: 1.5em;">Maria Teixeira</h5>
+                                 
+                                    <button class="btn-equipe position-relative" style="margin-left: 4em;"                     onclick="toggleInfo('info-membro4')">
+                                        <i id="arrow-membro4" class="fas fa-chevron-down position-absolute" style="top: 10px; right: 10px;"></i> Mais informações
+                                    </button>
+                                    <div id="info-membro4" class="more-info" style=" text-align: center;">
+                                        <p>
+                                            CARGO: Consultora de Usabilidade e Especialista em Arquitetura de Sistemas
+                                            Garante a otimização da interface do software, assegurando a funcionalidade do sistema.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Card 5 -->
+                    <div class="card-equipe mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./img/villaruel.png" class="img-fluid" alt="Membro 5">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="margin-right: 1.5em;">Maria Villaruel</h5>
+                            
+                                    <button class="btn-equipe position-relative" style="margin-left: 4em;" onclick="toggleInfo('info-membro5')">
+                                        <i id="arrow-membro5" class="fas fa-chevron-down position-absolute" style="top: 10px; right: 10px;"></i> Mais informações
+                                    </button>
+                                    <div id="info-membro5" class="more-info" style="display: none;">
+                                        <p> CARGO: Analista de Requisitos e Viabilidade
+                                            Verifica quais são as exigências para a
+                                            execução do projeto e realiza análises
+                                            para otimizar o processo.
+                                            </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
         
                      
                     </div>

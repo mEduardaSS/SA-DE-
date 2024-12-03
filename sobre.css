@@ -27,6 +27,7 @@ p {
     height: 100%;
     margin: 10px;
     background-color: #4655FF;
+    color: white;
 }
 
 
@@ -53,6 +54,7 @@ p {
     color: black;
     font-size: 25px;
     margin-top: 10px;
+ 
 }
 
 .card-text {
@@ -65,10 +67,11 @@ p {
 }
 
 .img-fluid {
-        margin: 10PX;
+        margin: 10px;
         width: 120px;        
         height: 120px;       
         border-radius: 50%;  
+        
 }
 
 .footer {
@@ -87,14 +90,14 @@ p {
 
 .footer-content {
     position: relative;
-    z-index: 1;        /* Garante que o conteúdo fique acima da onda */
+    z-index: 1;        
 }
 
 .footer h1 {
     font-size: 32px;
     font-weight: bold;
-    padding-left: 20px; /* Adiciona um pequeno espaço à esquerda */
-    text-align: left;   /* Alinha o conteúdo à esquerda */
+    padding-left: 20px; 
+    text-align: left;   
     color: white;
 }
 
